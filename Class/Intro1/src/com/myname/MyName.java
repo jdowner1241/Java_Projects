@@ -1,8 +1,10 @@
-import java.util.Scanner; //built-in Java Library
+package com.myname;
 
-public class MyJavaApp {
+import java.util.Scanner;
+
+public class MyName {
     public static void main(String[] args) {
-        
+
         Scanner scan = new Scanner(System.in);
 
         System.out.print("Enter your name: ");
@@ -18,5 +20,4 @@ public class MyJavaApp {
         System.out.println("\nThis is a test...");
         System.out.print("Math output: " + Math.round(3.1415));
     }
-
 }
