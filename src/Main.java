@@ -11,17 +11,20 @@ Group Members:
     Saphia Cothrel      –   2201013551
 */
 
+import creditsolution.Client;
+
 import java.util.Scanner;
 
 public class Main {
 
     public static void main(String[] args) {
+        Client client = new Client();
+        client.display();
 
-        Scanner scanner = new Scanner(System.in);
-
-        System.out.print("Hello and welcome!");
-
+        System.out.println("Name: "+client.getFirstName());
+        System.out.println("last: "+client.getLastName());
+        System.out.println("Age:  "+client.getAge());
+        System.out.println("ID Number: "+client.getIdNumber());
 
         }
     }
-}
