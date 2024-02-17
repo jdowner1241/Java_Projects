@@ -11,7 +11,7 @@ Group Members:
     Shemar Campbell     -   2201011901
     Saphia Cothrel      –   2201013551
 */
-public class Card {
+public class Card{
 
     private int cardNumber;
     private double balance;
@@ -58,6 +58,10 @@ public class Card {
         return status;
     }
     public void display(){
-
+        System.out.println("\n\tClient Card information");
+        System.out.println("\tCard Number: "+getCardNumber());
+        System.out.println("\tCurrent Balance: "+getBalance());
+        System.out.println("\tPin:  "+getPin());
+        System.out.println("\tCard Status: "+getStatus());
     }
 }

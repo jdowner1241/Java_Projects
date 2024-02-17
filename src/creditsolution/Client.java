@@ -21,7 +21,7 @@ public class Client {
     private String firstName;
     private String lastName;
     private int age;
-    private Card card;
+    private Card card = new Card();
 
     public Client(){};
     public Client(int newIdNumber, String newFirstName, String newLastName){
@@ -29,6 +29,7 @@ public class Client {
         this.firstName = newFirstName;
         this.lastName = newLastName;
     }
+
 
     public void setIdNumber(int idNumber) {
         this.idNumber = idNumber;
@@ -70,17 +71,15 @@ public class Client {
         return card;
     }
     public void display(){
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Please enter your First Name");
-        this.firstName = scanner.nextLine();
-
-        System.out.println("Please enter your First Name");
-        this.lastName = scanner.nextLine();
-
-        System.out.println("Please enter your First Name");
-        this.age = scanner.nextInt();
-
-        System.out.println("Please enter your First Name");
-        this.idNumber = scanner.nextInt();
+        System.out.println("\n\tClient Information");
+        System.out.println("\tName: "+getFirstName());
+        System.out.println("\tLast: "+getLastName());
+        System.out.println("\tAge:  "+getAge());
+        System.out.println("\tID Number: "+getIdNumber());
+        System.out.println("\n\tCard information");
+        System.out.println("\tCard Number: "+getCard().getCardNumber());
+        System.out.printf("\tCard Balance: $%,.2f%n", getCard().getBalance());
+        System.out.println("\tCard Pin: "+getCard().getPin());
+        System.out.println("\tCard Status: "+getCard().getStatus());
     }
 }
