@@ -13,6 +13,8 @@ Group Members:
     Saphia Cothrel      –   2201013551
 */
 
+import java.util.Scanner;
+
 public class Client {
 
     private int idNumber;
@@ -68,6 +70,17 @@ public class Client {
         return card;
     }
     public void display(){
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Please enter your First Name");
+        this.firstName = scanner.nextLine();
 
+        System.out.println("Please enter your First Name");
+        this.lastName = scanner.nextLine();
+
+        System.out.println("Please enter your First Name");
+        this.age = scanner.nextInt();
+
+        System.out.println("Please enter your First Name");
+        this.idNumber = scanner.nextInt();
     }
 }
