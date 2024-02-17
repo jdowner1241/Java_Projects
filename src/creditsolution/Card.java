@@ -47,9 +47,7 @@ public class Card{
         this.pin = pin;
     }
 
-    public int getPin() {
-        return pin;
-    }
+    public int getPin() { return pin; }
 
     public void setStatus(boolean status) {
         this.status = status;

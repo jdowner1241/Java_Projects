@@ -46,7 +46,11 @@ public class Main {
         card1.setCardNumber(scanner.nextInt());
         System.out.print("\tCard Balance: ");
         card1.setBalance(scanner.nextDouble());
+        System.out.print("\tCard Pin: ");
+        card1.setPin(scanner.nextInt());
         card1.setPin(45678);
+        System.out.print("\tCard Status (true/false): ");
+        card1.setStatus(scanner.nextBoolean());
         card1.setStatus(true);
 
 
