@@ -12,8 +12,8 @@ Group Members:
 */
 
 import creditsolution.Client;
+import creditsolution.Card;
 
-import java.util.Scanner;
 
 public class Main {
 
