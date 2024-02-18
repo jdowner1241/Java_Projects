@@ -36,6 +36,8 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 
         Client customer1 = new Client();
+
+
         Card card1 = new Card();
 
         System.out.println("\n\t++++++++++++++++++++++++");

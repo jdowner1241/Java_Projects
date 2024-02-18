@@ -58,7 +58,7 @@ public class Card{
     public void display(){
         System.out.println("\n\tClient Card information");
         System.out.println("\tCard Number: "+getCardNumber());
-        System.out.println("\tCurrent Balance: "+getBalance());
+        System.out.printf("\tCard Balance: $%,.2f%n", getBalance());
         System.out.println("\tPin:  "+getPin());
         System.out.println("\tCard Status: "+getStatus());
     }

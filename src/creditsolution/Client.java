@@ -76,10 +76,6 @@ public class Client {
         System.out.println("\tLast: "+getLastName());
         System.out.println("\tAge:  "+getAge());
         System.out.println("\tID Number: "+getIdNumber());
-        System.out.println("\n\tCard information");
-        System.out.println("\tCard Number: "+getCard().getCardNumber());
-        System.out.printf("\tCard Balance: $%,.2f%n", getCard().getBalance());
-        System.out.println("\tCard Pin: "+getCard().getPin());
-        System.out.println("\tCard Status: "+getCard().getStatus());
+        getCard().display();
     }
 }
